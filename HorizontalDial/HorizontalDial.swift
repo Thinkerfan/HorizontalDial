@@ -216,7 +216,7 @@ public final class HorizontalDial: UIControl {
         RunLoop.main.add(timer!, forMode: RunLoopMode.defaultRunLoopMode)
     }
     
-    func step() {
+    @objc func step() {
         let currentTime: TimeInterval = CACurrentMediaTime()
         let elapsedTime = currentTime - self.lastTime;
         
@@ -275,7 +275,7 @@ extension HorizontalDial {
     
     fileprivate func easeOutElastic(time t: Double, startValue b: Double, endValue e: Double, duration d: Double) -> Double {
         let c = e - b
-        let π = M_PI
+        let π = Double.pi
         var s = 1.70158, p = 0.0, a = c
         
         if (t == 0) { return b }

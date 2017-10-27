@@ -43,3 +43,6 @@ xcuserdata
 Carthage/Build
 
 .DS_Store
+Podfile.lock
+contents.xcworkspacedata
+Sample/Pods

@@ -8,6 +8,8 @@
 
 import UIKit
 
+import HorizontalDial
+
 class ViewController: UIViewController, UITextFieldDelegate, HorizontalDialDelegate {
     @IBOutlet var imageView: UIImageView?
     @IBOutlet var horizontalDial: HorizontalDial?
@@ -21,7 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate, HorizontalDialDeleg
     func horizontalDialDidValueChanged(_ horizontalDial: HorizontalDial) {
         let degrees = horizontalDial.value
         let radians = degreesToRadians(degrees)
-        degreesValueLabel?.text = "\(round(degrees*100)/100) Degrees"
+        degreesValueLabel?.text = "\(round(degrees * 100.0) / 100.0) Degrees"
         imageView?.transform = CGAffineTransform(rotationAngle: CGFloat(radians))
     }
     
@@ -63,7 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate, HorizontalDialDeleg
     
     /// private function ///
     fileprivate func degreesToRadians(_ degrees: Double) -> Double {
-        return degrees*M_PI/180.0
+        return degrees * Double.pi / 180.0
     }
 }
 
