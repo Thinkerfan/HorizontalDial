@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,16 +15,6 @@
 		A5BF1BCD1FA3DE3000E5903D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF1BC61FA3DE3000E5903D /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B692BED41BB5934400A8B098 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B692BEB71BB5934400A8B098 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B692BEBE1BB5934400A8B098;
-			remoteInfo = KCJogDial;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		36741BAA98BDE18B53A084D2 /* Pods-KCHorizontalDial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCHorizontalDial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KCHorizontalDial/Pods-KCHorizontalDial.debug.xcconfig"; sourceTree = "<group>"; };
 		A5BF1BBF1FA3DE3000E5903D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,7 +25,6 @@
 		A5BF1BC71FA3DE3000E5903D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B17D66629A12F95ED0B386EC /* Pods_KCHorizontalDial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KCHorizontalDial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B692BEBF1BB5934400A8B098 /* KCHorizontalDial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KCHorizontalDial.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B692BED31BB5934400A8B098 /* KCHorizontalDial.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCHorizontalDial.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35322F109552FA9EAD04FBA /* Pods-KCHorizontalDial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KCHorizontalDial.release.xcconfig"; path = "Pods/Target Support Files/Pods-KCHorizontalDial/Pods-KCHorizontalDial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,13 +34,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90AC8C5846FA31915069B509 /* Pods_KCHorizontalDial.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B692BED01BB5934400A8B098 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				B692BEBF1BB5934400A8B098 /* KCHorizontalDial.app */,
-				B692BED31BB5934400A8B098 /* KCHorizontalDial.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,7 +100,6 @@
 				B692BEBC1BB5934400A8B098 /* Frameworks */,
 				B692BEBD1BB5934400A8B098 /* Resources */,
 				95192D275E311D881527209C /* [CP] Embed Pods Frameworks */,
-				88844BD20DDC5151CF6EFF0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,45 +110,23 @@
 			productReference = B692BEBF1BB5934400A8B098 /* KCHorizontalDial.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B692BED21BB5934400A8B098 /* KCHorizontalDialUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B692BEDF1BB5934400A8B098 /* Build configuration list for PBXNativeTarget "KCHorizontalDialUITests" */;
-			buildPhases = (
-				B692BECF1BB5934400A8B098 /* Sources */,
-				B692BED01BB5934400A8B098 /* Frameworks */,
-				B692BED11BB5934400A8B098 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B692BED51BB5934400A8B098 /* PBXTargetDependency */,
-			);
-			name = KCHorizontalDialUITests;
-			productName = KCJogDialUITests;
-			productReference = B692BED31BB5934400A8B098 /* KCHorizontalDial.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B692BEB71BB5934400A8B098 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = LeeSunhyoup;
 				TargetAttributes = {
 					B692BEBE1BB5934400A8B098 = {
 						CreatedOnToolsVersion = 7.0;
-						LastSwiftMigration = 0900;
-					};
-					B692BED21BB5934400A8B098 = {
-						CreatedOnToolsVersion = 7.0;
-						TestTargetID = B692BEBE1BB5934400A8B098;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
 			buildConfigurationList = B692BEBA1BB5934400A8B098 /* Build configuration list for PBXProject "HorizontalDial" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -181,7 +139,6 @@
 			projectRoot = "";
 			targets = (
 				B692BEBE1BB5934400A8B098 /* KCHorizontalDial */,
-				B692BED21BB5934400A8B098 /* KCHorizontalDialUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,13 +151,6 @@
 				A5BF1BCB1FA3DE3000E5903D /* LaunchScreen.storyboard in Resources */,
 				A5BF1BCA1FA3DE3000E5903D /* Assets.xcassets in Resources */,
 				A5BF1BCC1FA3DE3000E5903D /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B692BED11BB5934400A8B098 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,21 +173,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		88844BD20DDC5151CF6EFF0A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KCHorizontalDial/Pods-KCHorizontalDial-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		95192D275E311D881527209C /* [CP] Embed Pods Frameworks */ = {
@@ -270,22 +205,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B692BECF1BB5934400A8B098 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B692BED51BB5934400A8B098 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B692BEBE1BB5934400A8B098 /* KCHorizontalDial */;
-			targetProxy = B692BED41BB5934400A8B098 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A5BF1BC21FA3DE3000E5903D /* LaunchScreen.storyboard */ = {
@@ -319,12 +239,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -351,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -371,12 +293,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -397,10 +321,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -411,10 +336,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/HorizontalDial/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kciter.KCJogDial;
 				PRODUCT_NAME = KCHorizontalDial;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -424,36 +352,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/HorizontalDial/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = kciter.KCJogDial;
 				PRODUCT_NAME = KCHorizontalDial;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		B692BEE01BB5934400A8B098 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = KCJogDialUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kciter.KCJogDialUITests;
-				PRODUCT_NAME = KCHorizontalDial;
-				TEST_TARGET_NAME = KCJogDial;
-				USES_XCTRUNNER = YES;
-			};
-			name = Debug;
-		};
-		B692BEE11BB5934400A8B098 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = KCJogDialUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kciter.KCJogDialUITests;
-				PRODUCT_NAME = KCHorizontalDial;
-				TEST_TARGET_NAME = KCJogDial;
-				USES_XCTRUNNER = YES;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -474,15 +379,6 @@
 			buildConfigurations = (
 				B692BEDD1BB5934400A8B098 /* Debug */,
 				B692BEDE1BB5934400A8B098 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B692BEDF1BB5934400A8B098 /* Build configuration list for PBXNativeTarget "KCHorizontalDialUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B692BEE01BB5934400A8B098 /* Debug */,
-				B692BEE11BB5934400A8B098 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

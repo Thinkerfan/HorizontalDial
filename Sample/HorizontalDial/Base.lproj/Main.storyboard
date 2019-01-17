@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KUw-a8-1fC">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lena_std.tif" translatesAutoresizingMaskIntoConstraints="NO" id="Rjw-in-POG">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lena_std" translatesAutoresizingMaskIntoConstraints="NO" id="Rjw-in-POG">
                                         <rect key="frame" x="10" y="10" width="355" height="355"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6rm-Lu-y4T">
@@ -147,14 +146,14 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FqU-wF-GIF">
-                                                        <rect key="frame" x="38" y="34" width="51" height="31"/>
+                                                        <rect key="frame" x="38" y="34.5" width="51" height="31"/>
                                                         <color key="onTintColor" red="0.6496143794" green="0.80883412379999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="enableRangeValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="SrK-Fg-gYY"/>
                                                         </connections>
                                                     </switch>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eanble Range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjo-e3-6L1">
-                                                        <rect key="frame" x="16" y="11" width="94" height="17"/>
+                                                        <rect key="frame" x="15.5" y="11.5" width="94" height="17"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <color key="textColor" red="0.6496143794" green="0.80883412379999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -172,14 +171,14 @@
                                                 <rect key="frame" x="125" y="0.0" width="125" height="100"/>
                                                 <subviews>
                                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" maximumValue="5" stepValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="End-Tk-QA6">
-                                                        <rect key="frame" x="15" y="35" width="94" height="29"/>
+                                                        <rect key="frame" x="15.5" y="35.5" width="94" height="29"/>
                                                         <color key="tintColor" red="0.6496143794" green="0.80883412379999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <connections>
                                                             <action selector="tickValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="l3I-AK-Tcd"/>
                                                         </connections>
                                                     </stepper>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tick" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1o-8k-967">
-                                                        <rect key="frame" x="48" y="12" width="30" height="17"/>
+                                                        <rect key="frame" x="47.5" y="11.5" width="30" height="17"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <color key="textColor" red="0.6496143794" green="0.80883412379999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -197,7 +196,7 @@
                                                 <rect key="frame" x="250" y="0.0" width="125" height="100"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vertical Align" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAR-4t-GG6">
-                                                        <rect key="frame" x="16" y="11" width="93" height="17"/>
+                                                        <rect key="frame" x="16" y="11.5" width="93" height="17"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                         <color key="textColor" red="0.6496143794" green="0.80883412379999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -244,7 +243,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcB-LE-Hxu">
-                                        <rect key="frame" x="252" y="10" width="113" height="34"/>
+                                        <rect key="frame" x="252.5" y="10" width="112.5" height="33.5"/>
                                         <string key="text">Min: -80 Degress
 Max: 80 Degrees</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -303,6 +302,6 @@ Max: 80 Degrees</string>
         </scene>
     </scenes>
     <resources>
-        <image name="lena_std.tif" width="512" height="512"/>
+        <image name="lena_std" width="16" height="16"/>
     </resources>
 </document>
